@@ -13,7 +13,7 @@ int main()
 	{
 		if (prime[i] == true)
 		{
-			for (int j = i; j * i <= max; j++)
+			for (int j = i; j * i <= max; j++) // 제곱부터 부터 살펴보는것이 옳음 3을 기준으로 3 * 2는 이미 2의 케이스에서 없어짐
 				prime[j * i] = false;
 		}
 	}
